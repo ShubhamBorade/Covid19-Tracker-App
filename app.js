@@ -8,6 +8,7 @@ let critical=document.getElementById("critical")
 let totalcases=document.getElementById("totalcases")
 let totaldeath=document.getElementById("totaldeath")
 let totaltaste=document.getElementById("totaltaste")
+let ctry=document.getElementById("ctry")
 btn.addEventListener('click', makeAPI);
 function makeAPI() {
     let city = document.getElementById("city");
@@ -31,6 +32,7 @@ function makeAPI() {
             totaldeath.innerHTML=`<b>${data.deaths}</b>`;
             totaltaste.innerHTML=`<b>${data.totalTests}</b>`;
             critical.innerHTML=`<b>${data.critical}</b>`;
+            ctry.innerHTML=`${data.country}`;
             // console.log(data.deaths);
 
             // console.log(data.recovered);
