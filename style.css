@@ -97,4 +97,12 @@ h4{
         height:270px;
         width:80%;
     }
+    h1{
+        margin-top: 10px;
+    }
+    hr{
+        width:250px;
+        margin:auto;
+        
+    }
 }
